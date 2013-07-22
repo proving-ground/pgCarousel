@@ -146,7 +146,7 @@ function pgcc_footer_js() {
     var img = $('#slide-container .slide:last img');
     var bk_img = img.attr('src').replace(".png", "_bk.jpg");
 
-    $('#slide-container').css("background-image", "url('" + bk_img + "')");
+    $('#body-container').css("background-image", "url('" + bk_img + "')");
       img.hide().delay(1500).fadeIn(2000);
   };
 
