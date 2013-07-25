@@ -146,8 +146,9 @@ function pgcc_footer_js() {
     var img = $('#slide-container .slide:last img');
     var bk_img = img.attr('src').replace(".png", "_bk.jpg");
 
-    $('#body-container').css("background-image", "url('" + bk_img + "')");
-      img.hide().delay(1500).fadeIn(2000);
+    //$('#body-container').css("background-image", "url('" + bk_img + "')");
+    $('#bg-image-container').html("<img src='" + bk_img + "' />");
+              img.hide().delay(1500).fadeIn(2000);
   };
 
   $(document).ready(function(){ $('#slide-container').jshowoff({
