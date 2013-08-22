@@ -128,6 +128,7 @@ function pgcc_frontend($atts){
 
 		</div>
 
+
 <?php }
 	$output = ob_get_contents();
 	ob_end_clean();
@@ -151,13 +152,15 @@ function pgcc_footer_js() {
               img.hide().delay(1500).fadeIn(2000);
   };
 
-  $(document).ready(function(){ $('#slide-container').jshowoff({
+  $(document).ready(function(){
+    $('#slide-container').jshowoff({
       cssClass: 'thumbFeatures',
       effect: 'slideLeft',
       speed: 4500,
       changeSpeed: 1500,
       afterTransition: afterEffect
-  }); });
+    });
+  });
 </script>
 <?php
 }
