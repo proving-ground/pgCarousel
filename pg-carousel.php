@@ -156,7 +156,7 @@ function pgcc_footer_js() {
     $('#slide-container').jshowoff({
       cssClass: 'thumbFeatures',
       effect: 'slideLeft',
-      speed: 4500,
+      speed: 10000,
       changeSpeed: 1500,
       afterTransition: afterEffect
     });
