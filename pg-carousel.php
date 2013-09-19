@@ -115,7 +115,7 @@ function pgcc_frontend($atts){
 	if(count($images) > 0){
 		ob_start();
 		?>
-		<div id="slide-container">
+		<div id="slide-container" style="display: none;">
 
 			<?php foreach ($images as $key => $image) { ?>
 				<div class="slide">
@@ -153,6 +153,7 @@ function pgcc_footer_js() {
   };
 
   $(document).ready(function(){
+    $('#slide-container').show();
     $('#slide-container').jshowoff({
       cssClass: 'thumbFeatures',
       effect: 'slideLeft',
